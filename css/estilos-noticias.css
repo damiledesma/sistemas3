@@ -1,0 +1,83 @@
+body {
+	background-image: url('../img/fondofondo.png');
+	background-repeat: no-repeat;
+	background-size: 100% 240px;
+	overflow-x: hidden;
+}
+
+.row-not {
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5%;
+}
+
+.titulo-noticias {
+	font-family: 'Great Vibes';
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.tit-not {
+	font-size: 17px;
+}
+
+	.tit-not {
+		text-align: right;
+	}
+
+#imagen {
+	width: 500px;
+	height: 375px;
+	position: relative;
+}
+
+	#imagen>div.tit-not {
+		position: relative;
+		bottom:25px;
+		color:#fff;
+		background-color:#000;
+		padding:2px 10px;
+		opacity:0.5;
+		font-weight:bold;
+	}
+
+.encabezado {
+	text-align: right;
+}
+
+#nav li {
+	z-index: 100 !important;
+}
+
+/*para smartphones */
+.breakpoint2  {
+	max-width: 100%;
+	display: inline-block;
+	margin-top: 5%;
+	padding-bottom: 2%;
+	margin-left: 5px;
+}
+
+/*para tablets */
+@media (min-width: 420px) {
+	.breakpoint2  {
+		max-width: 48%;
+		margin-left: 25px;
+	}
+}
+/* para grandes dispositivos*/
+@media (min-width: 760px) {
+	.breakpoint2  {
+		max-width: 24%;
+		margin-left: 150px;
+	}
+}
+
+@media screen and (max-width:950px ) {
+	body {
+		background-image: url('../img/fondo.jpg');
+		background-size: 100% 100%;
+	}
+}

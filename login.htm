@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css/estilos-login.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <a id="atras" href="index.htm" style="text-decoration:none; color:#2b2b2b;" title="atras"> <i class="fa fa-angle-left"></i></a>
+
+<div class="container">
+<div class="row">
+  <div class="col-xs-12 col-md-6 login" id="login">
+
+          <h1>Login</h1>
+          <form method="post" action="index.htm">
+            <p><input type="text" name="login" value="" placeholder="Usuario o Email"></p>
+            <p><input type="password" name="password" value="" placeholder="Contraseña"></p>
+            <p class="remember_me">
+              <label>
+                <input type="checkbox" name="remember_me" id="remember_me">
+                Recordar usuarios y contraseña
+              </label>
+            </p>
+            <p class="submit"><button class="btn btn-primary"> Aceptar </button></p>
+          </form>
+
+
+        <div class="login-help">
+          <p>Olvido la contraseña? <a href="index.htm">Click aquí para recuperarla</a>.</p>
+        </div>
+  </div>
+
+  <div class="col-xs-12 col-md-5 login" id="register">
+          <h1>Registro</h1>
+          <form method="post" action="index.htm">
+            <p><input type="text" name="login" value="" placeholder="Nombre"></p>
+            <p><input type="text" name="login" value="" placeholder="Apellido"></p>
+            <p><input type="text" name="login" value="" placeholder="Teléfono"></p>
+            <p><input type="text" name="login" value="" placeholder="Email"></p>
+            <p><input type="password" name="password" value="" placeholder="Contraseña"></p>
+            <p class="remember_me">
+              <label>
+                <input type="checkbox" name="remember_me" id="remember_me">
+                Recordar usuarios y contraseña
+              </label>
+            </p>
+            <p class="submit"><button class="btn btn-primary"> Registrarme </button></p>
+          </form>
+  </div>
+</div>
+<button class="btn btn-danger" id="btnProcesar"> No tengo cuenta</button> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  document.getElementById("register").style.display = "none";
+  
+  $('#btnProcesar').on('click', function(){
+    $('#register').slideToggle('slow');
+    $('#btnProcesar').slideToggle('hide');
+  });
+</script>
+</body>
+</html>
